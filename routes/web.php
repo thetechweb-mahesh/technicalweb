@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\ShortcodeController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\SettingController;
+use App\Http\Controllers\Admin\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -61,6 +62,15 @@ Route::get('category/{service_slug}{slug}',[App\Http\Controllers\Frontend\Fronte
     Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function(){
 
     Route::get('/dashboard',[App\Http\Controllers\Admin\DashboardController::class, 'index']);
+    
+    //users 
+    Route::get('/users',[UserController::class, 'index']);
+    Route::get('/edit/{id}',[UserController::class, 'edit']);
+    Route::put('update-user/{id}', [UserController::class, 'updateUserRole'])->name('update-user');
+
+
+ 
+ 
 
     //setting 
     Route::get('/settings',[SettingController::class, 'index']);

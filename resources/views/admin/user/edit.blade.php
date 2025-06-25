@@ -48,6 +48,7 @@
                         <h4 class="card-title">Add edit</h4>
                        <div class="form-group"><br>
                   <label for="exampleInputName1">Full name</label>
+                  <input type="text" name="name" value="{{$user->name}}">
                            <p class="form-control">{{$user->name}}</p>
                           </div>
 
@@ -60,22 +61,21 @@
                              <p class="form-control">{{$user->created_at->format('d/m/y')}}</p>
                             </div>
 
-                            <form class="forms-sample" action="{{url('admin/update-user/'.$user->id)}}" method="POST">
-                              @csrf
-                              @method('PUT')
+                         <form action="{{ url('admin/update-user/'.$user->id) }}" method="POST">
+    @csrf
+    @method('PUT')
 
-                          <div class="form-group">
-                              <label for="exampleInputName1">Role as</label>
-                              <select name="role_as"  class="form-control">
-                                <option value="1" {{$user->role_as == '1' ? 'selected':''}}>Admin </option>
-                                <option value="0" {{$user->role_as == '0' ? 'selected':''}}>User </option>
-                                <option value="2" {{$user->role_as == '2' ? 'selected':''}}>Blogger </option>
-                              </select>
+    <div class="form-group">
+        <label for="exampleInputName1">Role as</label>
+        <select name="role_as" class="form-control">
+            <option value="1" {{ $user->role_as == '1' ? 'selected' : '' }}>Admin</option>
+            <option value="0" {{ $user->role_as == '0' ? 'selected' : '' }}>User</option>
+            <option value="2" {{ $user->role_as == '2' ? 'selected' : '' }}>Blogger</option>
+        </select>
+    </div>
 
-                            </div>
-                            <button type="submit" class="btn btn-primary mr-2">updated User Role</button>
-
-                        </form>
+    <button type="submit" class="btn btn-primary mr-2">Update User Role</button>
+</form>
 
 
 

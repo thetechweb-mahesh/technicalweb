@@ -1,3 +1,4 @@
+
 @extends('layouts.master')
 @section('title','view Users')
 
@@ -178,6 +179,9 @@
 
 
                 <h1 class="h3 mb-0 text-gray-800">View User</h1>
+                @if(session('success'))
+    <div class="alert alert-success">{{ session('success') }}</div>
+@endif
                 <a href="{{url('admin/add-post')}}" class="btn btn-primary btn-sm float-right">Add User</a>
                 @if(session('message'))
                 <div class="alert  alert-success">{{session('message')}}
@@ -219,7 +223,7 @@
                                                 <td>{{$item->email}}</td>
                                                 <td>{{$item->role_as == '1' ? 'Admin': 'user'}}</td>
 
-                                                <td><a href="{{url('admin/user',$item->id)}}" class="btn btn-success btn-sm btn-icon-text mr-3">Edit</a></td>
+                                                <td><a href="{{url('admin/edit',$item->id)}}" class="btn btn-success btn-sm btn-icon-text mr-3">Edit</a></td>
                                               </tr>
                                               @endforeach
                                   </tbody>
