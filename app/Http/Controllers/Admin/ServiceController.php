@@ -16,7 +16,8 @@ class ServiceController extends Controller
 
  public function index(){
 
-    $services =Service::all();
+    $services =Service::all();   
+        //  $services = Service::with('translations')->get();
     
     return view('admin.service.index', compact('services'));
 }
@@ -27,7 +28,21 @@ return view('admin.service.add',compact('category'));
 }
 
 
+//
 
+public function showTranslatedService()
+{
+    $service = Service::with('translations')->first();
+
+    return [
+        'translated_name' => $service->translated_name,
+        'translated_description' => $service->translated_description,
+    ];
+}
+
+
+
+///
 
  public function store(Request $request){
 

@@ -147,7 +147,14 @@ public function blogtails($slug)
 }
 
 
-
+  public function showByTag($tag)
+    {
+        
+        $blog = Blog::whereJsonContains('tags', $tag)->get();
+    
+       
+        return view('frontend.blogstag', compact('blog', 'tag'));  // Adjust the view path as necessary
+    }
 
 public function contactdetails()
 

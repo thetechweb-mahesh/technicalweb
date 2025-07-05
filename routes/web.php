@@ -6,7 +6,7 @@ use App\Http\Controllers\Admin\ShortcodeController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\UserController;
-
+use App\Http\Controllers\Admin\ServiceController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,6 +30,14 @@ Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('passw
 
 Auth::routes();
 
+Route::get('/lang/{locale}', function ($locale) {
+    session(['locale' => $locale]);
+    return redirect()->back(); // or to any route you like
+});
+Route::get('/translated-service', [ServiceController::class, 'showTranslatedService']);
+
+
+
 // Route::fallback([HomeController::class, 'handleNotFound']);
 // Correct way to define custom named routes without conflicting with Laravel's default names
 Route::get('custom-password-reset', 'PasswordResetController@showResetForm')->name('custom.password.reset');
@@ -48,15 +56,14 @@ Route::get('/',[App\Http\Controllers\Frontend\FrontendController::class,'index']
 
 
 Route::get('category',[App\Http\Controllers\Frontend\FrontendController::class,'category']);
-
-Route::get('blog',[App\Http\Controllers\Frontend\FrontendController::class,'category']);
-Route::get('/contact',[App\Http\Controllers\Frontend\FrontendController::class,'contactdetails']);
-
-Route::get('blog/{slug}',[App\Http\Controllers\Frontend\FrontendController::class,'blogtails']);
-
 Route::get('view-category/{slug}',[App\Http\Controllers\Frontend\FrontendController::class,'viewcategory']);
 Route::get('category/{service_slug}{slug}',[App\Http\Controllers\Frontend\FrontendController::class,'serviceview']);
 
+Route::get('blog',[App\Http\Controllers\Frontend\FrontendController::class,'category']);
+Route::get('blog/{slug}',[App\Http\Controllers\Frontend\FrontendController::class,'blogtails']);
+Route::get('/blog/{tag}', [App\Http\Controllers\Frontend\FrontendController::class, 'showByTag']);
+
+Route::get('/contact',[App\Http\Controllers\Frontend\FrontendController::class,'contactdetails']);
 
 
     Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function(){

@@ -15,8 +15,6 @@
 <section class='dreid' id="about">
 <div class='secIn'>
 
-  
-gfhjkhjlkkl
 <div class='grew'><h2>
   {{-- {{ str_replace('-', ' ', $blogs->slug) }} --}}
   {{ ucfirst(str_replace('-', ' ', $blogs->slug)) }}
@@ -60,11 +58,12 @@ gfhjkhjlkkl
     </div>
   </div>
  @endforeach
-
- 
+ <h2>Tags</h2>
+      @foreach ($blog->tags ?? [] as $tag)
+                                          <a href="{{ url('blog.tag', $tag) }}" class="tag-link">{{ $tag }}</a>
+                                         
+                                      @endforeach
 </div>
-
-
 
 
 @endsection

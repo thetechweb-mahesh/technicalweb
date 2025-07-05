@@ -69,6 +69,9 @@
           <li class="nav-item"><a class="nav-link" href="{{url('admin/add-service')}}"><span class="nav-icon"></span> Add Service</a></li>
           <li class="nav-item"><a class="nav-link" href="{{url('admin/service')}}"><span class="nav-icon"></span> View Service</a></li>
         </ul>
+        <a href="{{ url('lang/en') }}">English</a> |
+        
+<a href="{{ url('lang/fr') }}">Français</a>
       </li>
 
       <li class="nav-group"><a class="{{Request::is('admin/category') || Request::is('admin/add-category') || Request::is('admin/edit-category/*') ? 'collapse active':'collapsed'}} nav-link nav-group-toggle" href="#">
