@@ -122,8 +122,13 @@
         <ul class="nav-group-items">
           <li class="nav-item"><a class="nav-link {{Request::is('admin/users') ? 'active':''}}" href="{{url('admin/users')}}"> User</a></li>
 
+           <li class="nav-item"><a class="nav-link {{Request::is('admin/users') ? 'active':''}}" href="{{ url('admin/roles') }}"> Permission</a></li>
+
         </ul>
+        
+                                 
       </li>
+      
       <li class="nav-group"><a class="{{Request::is('admin/users') ? 'active':''}} nav-link nav-group-toggle" href="#">
         <svg class="nav-icon">
           <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-notes"></use>

@@ -22,21 +22,33 @@ class LoginController extends Controller
 
     use AuthenticatesUsers;
 
-    public function authenticated()
+    // public function authenticated()
 
-    {
-       if(Auth::user()->role_as=='1')
-       {
-        return redirect('admin/dashboard')->with('status','welcome to dashboard');
-       }
-       elseif(Auth::user()->role_as=='0')
-       {
-        return redirect('/login')->with('status','login successfully');
-       }
-       else{
+    // {
+    //    if(Auth::user()->role_as=='1')
+    //    {
+    //     return redirect('admin/dashboard')->with('status','welcome to dashboard');
+    //    }
+    //    elseif(Auth::user()->role_as=='0')
+    //    {
+    //     return redirect('/login')->with('status','login successfully');
+    //    }
+    //    else{
+    //     return redirect('/');
+    //    }
+    // }
+public function authenticated()
+{
+    $role = Auth::user()->role_as;
+
+    if ($role == '1' || $role == '2') {
+        return redirect('admin/dashboard')->with('status', 'Welcome to dashboard');
+    } elseif ($role == '0') {
+        return redirect('/login')->with('status', 'Login successfully');
+    } else {
         return redirect('/');
-       }
     }
+}
 
     /**
      * Where to redirect users after login.

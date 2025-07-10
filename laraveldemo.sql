@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 07, 2025 at 03:28 PM
+-- Generation Time: Jul 10, 2025 at 11:02 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -76,8 +76,8 @@ CREATE TABLE `blogs` (
 
 INSERT INTO `blogs` (`id`, `name`, `slug`, `description`, `image`, `meta_title`, `meta_description`, `meta_keyword`, `tags`, `status`, `created_by`, `created_at`, `updated_at`) VALUES
 (1, 'Leading Website Designing Company in Delhi', 'website-design', '<p>Transform your business with our award-winning website designing company in Delhi. Specializing in&nbsp;<a href=\"https://www.artisticbird.com/website-design-company#ecommercesolution\">eCommerce</a>&nbsp;development,&nbsp;<a href=\"https://www.artisticbird.com/website-design-company#landingpagedesign\">landing</a>&nbsp;pages,&nbsp;<a href=\"https://www.artisticbird.com/website-design-company#cmsdevelopment\">CMS</a>&nbsp;Website,&nbsp;<a href=\"https://www.artisticbird.com/website-design-company#bespokeorportal\">Bespoke</a>&nbsp;Solutuion, and more, we create digital masterpieces tailored to your needs.Elevate your brand with a stunning website designed for success. Partner with us for exceptional online solutions!</p>', '1741354265.jpg', 'Leading Website Designing Company in Delhi, India', 'Transform your business with our award-winning website designing company in Delhi. Specializing in eCommerce development,', 'Website Designing', '[\"test\",\"test\"]', 0, 1, '2025-02-28 06:11:15', '2025-03-07 08:01:05'),
-(2, 'Leading Website Designing Company in Delhi, India', 'website-design-company', '<p>Transform your business with our award-winning website designing company in Delhi. Specializing in&nbsp;<a href=\"https://www.artisticbird.com/website-design-company#ecommercesolution\">eCommerce</a>&nbsp;development,&nbsp;<a href=\"https://www.artisticbird.com/website-design-company#landingpagedesign\">landing</a>&nbsp;pages,&nbsp;<a href=\"https://www.artisticbird.com/website-design-company#cmsdevelopment\">CMS</a>&nbsp;Website,&nbsp;<a href=\"https://www.artisticbird.com/website-design-company#bespokeorportal\">Bespoke</a>&nbsp;Solutuion, and more, we create digital masterpieces tailored to your needs.Elevate your brand with a stunning website designed for success. Partner with us for exceptional online solutions!</p>\r\n\r\n<p>&nbsp;</p>', '1740827389.jpg', 'Leading Website Designing Company in Delhi, India', 'Transform your business with our award-winning website designing company in Delhi. Specializing in eCommerce development, landing pages, CMS Website, Bespoke Solutuion, and more, we create digital masterpieces tailored to your needs.Elevate your brand with a stunning website designed for success. Partner with us for exceptional online solutions!', 'Website Designing', '[null,null]', 0, 1, '2025-03-01 05:05:52', '2025-03-01 05:39:49'),
-(3, '7-Day Diet Plan for Weight Loss at Home', '7-day-diet-plan', '<p>Weight loss at home doesn&rsquo;t need to feel like a full-time job. You don&rsquo;t need exotic ingredients or a personal nutritionist. What you do need is a little planning, some consistency, and a willingness to make better choices throughout your day. If that sounds like you, this 7-day plan is a great place to start.</p>', '1749295749.png', 'Ready to stand out online?', 'Weight loss at home doesn’t need to feel like a full-time job.', 'Your form setup', '[null,null]', 1, 1, '2025-06-07 05:59:09', '2025-06-07 05:59:09');
+(2, 'Leading Website Designing Company in Delhi, India', 'website-design-company', '<p>Transform your business with our award-winning website designing company in Delhi. Specializing in&nbsp;<a href=\"https://www.artisticbird.com/website-design-company#ecommercesolution\">eCommerce</a>&nbsp;development,&nbsp;<a href=\"https://www.artisticbird.com/website-design-company#landingpagedesign\">landing</a>&nbsp;pages,&nbsp;<a href=\"https://www.artisticbird.com/website-design-company#cmsdevelopment\">CMS</a>&nbsp;Website,&nbsp;<a href=\"https://www.artisticbird.com/website-design-company#bespokeorportal\">Bespoke</a>&nbsp;Solutuion, and more, we create digital masterpieces tailored to your needs.Elevate your brand with a stunning website designed for success. Partner with us for exceptional online solutions!</p>\r\n\r\n<p>&nbsp;</p>', '1740827389.jpg', 'Leading Website Designing Company in Delhi, India', 'Transform your business with our award-winning website designing company in Delhi. Specializing in eCommerce development, landing pages, CMS Website, Bespoke Solutuion, and more, we create digital masterpieces tailored to your needs.Elevate your brand with a stunning website designed for success. Partner with us for exceptional online solutions!', 'Website Designing', '[\"mahesh\",\"mukesh\"]', 1, 1, '2025-03-01 05:05:52', '2025-03-01 05:39:49'),
+(3, '7-Day Diet Plan for Weight Loss at Home', '7-day-diet-plan', '<p>Weight loss at home doesn&rsquo;t need to feel like a full-time job. You don&rsquo;t need exotic ingredients or a personal nutritionist. What you do need is a little planning, some consistency, and a willingness to make better choices throughout your day. If that sounds like you, this 7-day plan is a great place to start.</p>', '1751293320.jpg', 'Ready to stand out online?', 'Weight loss at home doesn’t need to feel like a full-time job.', 'Your form setup', '[\"test2\",\"abc\"]', 1, 1, '2025-06-07 05:59:09', '2025-06-30 08:52:00');
 
 -- --------------------------------------------------------
 
@@ -106,7 +106,7 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `name`, `slug`, `description`, `image`, `meta_title`, `meta_description`, `meta_keyword`, `navbar_status`, `status`, `created_by`, `created_at`, `updated_at`) VALUES
-(2, 'web design', 'web-design', 'Software development is the stab process of designing, programming, solids to testing, and maintaining software as the applications and systems. It empowers us to turn ideas\r\n\r\nSoftware developers', '1716725484 . jpg', 'web design', 'Software development is the stab process of designing', 'web design', 0, 0, 1, '2024-05-26 06:41:24', '2024-05-26 06:41:24'),
+(2, 'web design', 'web-design', 'Software development is the stab process of designing, programming, solids to testing, and maintaining software as the applications and systems. It empowers us to turn ideas\r\n\r\nSoftware developers', '1751017256 . jpg', 'web design', 'Software development is the stab process of designing', 'web design', 0, 0, 1, '2024-05-26 06:41:24', '2025-06-27 04:10:56'),
 (4, 'Html', 'html', '<p>Ready to stand out online? Let\'s talk about making your website awesome! Reach out to us now to chat about your website ideas and design wishes. We\'re here to turn your online dreams into a digital reality.<br></p>', '1749302788 . png', 'Main-fashion', 'Ready to stand out online? Let\'s talk about making your website awesome!', 'making your website', 0, 0, 1, '2024-06-23 02:09:33', '2025-06-07 07:56:44');
 
 -- --------------------------------------------------------
@@ -200,7 +200,41 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (28, '2025_02_27_113741_create_contents_create', 2),
 (29, '2025_02_27_114001_create_contents_table', 3),
 (30, '2025_02_27_123419_create_shortcodes_table', 4),
-(31, '2025_02_28_103645_create_blogs_table', 5);
+(31, '2025_02_28_103645_create_blogs_table', 5),
+(32, '2025_06_26_135305_create_service_translations_table', 6),
+(33, '2025_07_09_103412_create_permission_tables', 7);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `model_has_permissions`
+--
+
+CREATE TABLE `model_has_permissions` (
+  `permission_id` bigint(20) UNSIGNED NOT NULL,
+  `model_type` varchar(255) NOT NULL,
+  `model_id` bigint(20) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `model_has_roles`
+--
+
+CREATE TABLE `model_has_roles` (
+  `role_id` bigint(20) UNSIGNED NOT NULL,
+  `model_type` varchar(255) NOT NULL,
+  `model_id` bigint(20) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `model_has_roles`
+--
+
+INSERT INTO `model_has_roles` (`role_id`, `model_type`, `model_id`) VALUES
+(1, 'App\\Models\\User', 1),
+(2, 'App\\Models\\User', 2);
 
 -- --------------------------------------------------------
 
@@ -229,6 +263,45 @@ CREATE TABLE `password_reset_tokens` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `permissions`
+--
+
+CREATE TABLE `permissions` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `guard_name` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `permissions`
+--
+
+INSERT INTO `permissions` (`id`, `name`, `guard_name`, `created_at`, `updated_at`) VALUES
+(1, 'add_category', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29'),
+(2, 'edit_category', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29'),
+(3, 'delete_category', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29'),
+(4, 'add_service', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29'),
+(5, 'edit_service', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29'),
+(6, 'delete_service', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29'),
+(7, 'add_blog', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29'),
+(8, 'edit_blog', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29'),
+(9, 'delete_blog', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29'),
+(10, 'add_content', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29'),
+(11, 'edit_content', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29'),
+(12, 'delete_content', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29'),
+(13, 'add_about', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29'),
+(14, 'edit_about', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29'),
+(15, 'delete_about', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29'),
+(16, 'view roles', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29'),
+(17, 'create roles', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29'),
+(18, 'edit roles', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29'),
+(19, 'delete roles', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `personal_access_tokens`
 --
 
@@ -244,6 +317,72 @@ CREATE TABLE `personal_access_tokens` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `roles`
+--
+
+CREATE TABLE `roles` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `guard_name` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `roles`
+--
+
+INSERT INTO `roles` (`id`, `name`, `guard_name`, `created_at`, `updated_at`) VALUES
+(1, 'super-admin', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29'),
+(2, 'admin', 'web', '2025-07-09 05:37:29', '2025-07-09 05:37:29');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `role_has_permissions`
+--
+
+CREATE TABLE `role_has_permissions` (
+  `permission_id` bigint(20) UNSIGNED NOT NULL,
+  `role_id` bigint(20) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `role_has_permissions`
+--
+
+INSERT INTO `role_has_permissions` (`permission_id`, `role_id`) VALUES
+(1, 1),
+(1, 2),
+(2, 1),
+(2, 2),
+(3, 1),
+(3, 2),
+(4, 1),
+(4, 2),
+(5, 1),
+(5, 2),
+(6, 1),
+(6, 2),
+(7, 1),
+(7, 2),
+(8, 1),
+(8, 2),
+(9, 1),
+(10, 1),
+(11, 1),
+(12, 1),
+(13, 1),
+(14, 1),
+(15, 1),
+(16, 1),
+(17, 1),
+(18, 1),
+(19, 1);
 
 -- --------------------------------------------------------
 
@@ -277,8 +416,31 @@ CREATE TABLE `services` (
 --
 
 INSERT INTO `services` (`id`, `category_id`, `name`, `slug`, `description`, `image`, `m_ser_title`, `m_ser_des`, `ser_list_title`, `ser_list_des`, `yt_ifranme`, `meta_title`, `meta_description`, `meta_keyword`, `status`, `created_by`, `created_at`, `updated_at`) VALUES
-(1, 2, 'Web developer', 'web-developer', '<p><b>Software</b> development is the stab process of designing, programming, solids to testing, and maintaining software as the applications and systems.&nbsp;<br></p>', '1749302073 . png', 'Software development is the stab process of designing, programming, solids to testing, and maintaining software as the applications and systems.', 'Software development is the stab process of designing, programming, solids to testing, and maintaining software as the applications and systems.', 'Our Mission', 'Software development is the stab process of designing, programming, solids to testing, and maintaining software as the applications and systems.', 'https://time.com/6359181/trump-criminal-trials-colorado-supreme-court/', 'Ram temple ceremony m', 'Software development is the stab process of designing, programming, solids to testing, and maintaining software as the applications and systems.', 'Software development', 0, 1, '2024-05-26 06:55:32', '2025-06-07 07:44:33'),
-(3, 4, 'saumya mishra', 'makeup-products', '<p><b>Software development</b> is the stab process of designing, programming, solids to testing, and maintaining software as the applications and systems. It empowers us to turn ideas</p><p><br></p>', '1716729314 . jpg', 'Our Mission', 'Software development is the stab process of designing, programming, solids to testing, and maintaining software as the applications and systems. It empowers us to turn ideas', 'Our Mission', 'Software development is the stab process of designing', 'https://www.youtube.com/watch?v=oFRCWsnt9yA', 'Ram temple ceremony m', 'Software development is the stab process of designing, programming, solids to testing, and maintaining software as the applications and systems. It empowers us to turn ideas', 'Software development is the stab process of designing', 0, 1, '2024-05-26 07:45:14', '2025-06-07 07:57:47');
+(1, 2, 'Best Web Designing', 'web-developer', 'This is Best Web Designing  description', '1751016584 . jpg', 'Software development is the stab process of designing, programming, solids to testing, and maintaining software as the applications and systems.', 'Software development is the stab process of designing, programming, solids to testing, and maintaining software as the applications and systems.', 'Our Mission', 'Software development is the stab process of designing, programming, solids to testing, and maintaining software as the applications and systems.', 'https://time.com/6359181/trump-criminal-trials-colorado-supreme-court/', 'Ram temple ceremony m', 'Software development is the stab process of designing, programming, solids to testing, and maintaining software as the applications and systems.', 'Software development', 0, 1, '2024-05-26 06:55:32', '2025-06-27 03:59:44'),
+(3, 4, 'html-web', 'makeup-products', 'this is demo message', '1751017380 . jpg', 'Our Mission', 'Software development is the stab process of designing, programming, solids to testing, and maintaining software as the applications and systems. It empowers us to turn ideas', 'Our Mission', 'Software development is the stab process of designing', 'https://www.youtube.com/watch?v=oFRCWsnt9yA', 'Ram temple ceremony m', 'Software development is the stab process of designing, programming, solids to testing, and maintaining software as the applications and systems. It empowers us to turn ideas', 'Software development is the stab process of designing', 0, 1, '2024-05-26 07:45:14', '2025-06-27 04:13:00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `service_translations`
+--
+
+CREATE TABLE `service_translations` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `service_id` bigint(20) UNSIGNED NOT NULL,
+  `locale` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `description` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `service_translations`
+--
+
+INSERT INTO `service_translations` (`id`, `service_id`, `locale`, `name`, `description`) VALUES
+(1, 1, 'en', 'Web Design', 'Professional website design services.'),
+(2, 3, 'fr', 'Conception Web', 'Services professionnels de conception de sites Web.'),
+(3, 1, 'fr', 'Conception Web', 'Services professionnels de conception de sites Web.');
 
 -- --------------------------------------------------------
 
@@ -350,8 +512,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `role_as`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'gk790521@gmail.com', NULL, 1, '$2y$12$AUvs/FPZm4aMK0.HbW/xYeAMsIpy.ZYygpDw4/t4arG9ngrd1cLpC', 'SKYJOZjcBm5OEa16R8w2AuGS024glR9JmawxiryocH6VfpzRgNnl25DhypH8', '2024-05-25 08:14:38', '2024-05-25 08:14:38'),
-(2, 'mahesh', 'admin@gmail.com', NULL, 0, '$2y$12$Mxfd8GGLvdM2xWjZeWBr4ugdk6AuHuqoGEy4PQJgBTRTKWHD2ZczC', NULL, '2024-06-23 13:18:42', '2024-06-23 13:18:42');
+(1, 'supper admin', 'superadmin@gmail.com', NULL, 1, '$2y$12$rfj4i4VgE/wEJRFloYwGI.QaBh.Ymv4vljgD2zCiqfYs7pbLWZmXi', NULL, '2025-07-09 05:59:59', '2025-07-09 05:59:59'),
+(2, 'admin', 'admin@example.com', NULL, 2, '$2y$12$sZpajHkEupJTmUZfzN8rGuWGMauVnDHF/cc6HAu9QYUGZSrJXjMwm', NULL, '2025-07-09 06:01:14', '2025-07-09 06:01:14');
 
 --
 -- Indexes for dumped tables
@@ -401,6 +563,20 @@ ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `model_has_permissions`
+--
+ALTER TABLE `model_has_permissions`
+  ADD PRIMARY KEY (`permission_id`,`model_id`,`model_type`),
+  ADD KEY `model_has_permissions_model_id_model_type_index` (`model_id`,`model_type`);
+
+--
+-- Indexes for table `model_has_roles`
+--
+ALTER TABLE `model_has_roles`
+  ADD PRIMARY KEY (`role_id`,`model_id`,`model_type`),
+  ADD KEY `model_has_roles_model_id_model_type_index` (`model_id`,`model_type`);
+
+--
 -- Indexes for table `password_resets`
 --
 ALTER TABLE `password_resets`
@@ -413,6 +589,13 @@ ALTER TABLE `password_reset_tokens`
   ADD PRIMARY KEY (`email`);
 
 --
+-- Indexes for table `permissions`
+--
+ALTER TABLE `permissions`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `permissions_name_guard_name_unique` (`name`,`guard_name`);
+
+--
 -- Indexes for table `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
@@ -421,10 +604,32 @@ ALTER TABLE `personal_access_tokens`
   ADD KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`);
 
 --
+-- Indexes for table `roles`
+--
+ALTER TABLE `roles`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `roles_name_guard_name_unique` (`name`,`guard_name`);
+
+--
+-- Indexes for table `role_has_permissions`
+--
+ALTER TABLE `role_has_permissions`
+  ADD PRIMARY KEY (`permission_id`,`role_id`),
+  ADD KEY `role_has_permissions_role_id_foreign` (`role_id`);
+
+--
 -- Indexes for table `services`
 --
 ALTER TABLE `services`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `service_translations`
+--
+ALTER TABLE `service_translations`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `service_translations_service_id_locale_unique` (`service_id`,`locale`),
+  ADD KEY `service_translations_locale_index` (`locale`);
 
 --
 -- Indexes for table `settings`
@@ -489,7 +694,13 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+
+--
+-- AUTO_INCREMENT for table `permissions`
+--
+ALTER TABLE `permissions`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
@@ -498,10 +709,22 @@ ALTER TABLE `personal_access_tokens`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `roles`
+--
+ALTER TABLE `roles`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `service_translations`
+--
+ALTER TABLE `service_translations`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `settings`
@@ -520,6 +743,35 @@ ALTER TABLE `shortcodes`
 --
 ALTER TABLE `users`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `model_has_permissions`
+--
+ALTER TABLE `model_has_permissions`
+  ADD CONSTRAINT `model_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `model_has_roles`
+--
+ALTER TABLE `model_has_roles`
+  ADD CONSTRAINT `model_has_roles_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `role_has_permissions`
+--
+ALTER TABLE `role_has_permissions`
+  ADD CONSTRAINT `role_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `role_has_permissions_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `service_translations`
+--
+ALTER TABLE `service_translations`
+  ADD CONSTRAINT `service_translations_service_id_foreign` FOREIGN KEY (`service_id`) REFERENCES `services` (`id`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

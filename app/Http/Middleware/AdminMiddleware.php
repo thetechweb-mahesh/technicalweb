@@ -14,26 +14,42 @@ class AdminMiddleware
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    public function handle(Request $request, Closure $next): Response
-    {
-        if(Auth::check()){
+   //  public function handle(Request $request, Closure $next): Response
+   //  {
+   //      if(Auth::check()){
 
-        if(Auth::user()->role_as == '1') //1 is Admin & 0 is common user
+   //      if(Auth::user()->role_as == '1') //1 is Admin & 0 is common user
 
-        {
-           return $next($request);
+   //      {
+   //         return $next($request);
 
+   //      }
+   //      else{
+
+   //       return redirect('/home')->with('status','Asses Denied! As You are not an Admin');
+
+   //      }
+   // }
+   //    else{
+
+   //     return redirect('/login')->with('status','please login first');
+
+   //    }
+   // }
+
+   public function handle(Request $request, Closure $next): Response
+{
+    if (Auth::check()) {
+
+        if (in_array(Auth::user()->role_as, ['1', '2'])) {
+            return $next($request);
+        } else {
+            return redirect('/home')->with('status', 'Access Denied! You are not authorized.');
         }
-        else{
 
-         return redirect('/home')->with('status','Asses Denied! As You are not an Admin');
+    } else {
+        return redirect('/login')->with('status', 'Please login first');
+    }
+}
 
-        }
-   }
-      else{
-
-       return redirect('/login')->with('status','please login first');
-
-      }
-   }
 }

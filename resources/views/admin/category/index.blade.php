@@ -239,11 +239,20 @@
                                         <td><img src="{{asset('uploads/category/'.$item->image)}}" width="50px" height="50px" alt="image"></td>
                                         <td>{{$item->status  == '1' ? 'Hidden':'shown'}}</td>
 
-                                      <td><a href="{{url('admin/edit-category/'.$item->id)}}" class="btn btn-success btn-sm btn-icon-text mr-3">Edit </a></td>
+                                      <td>
+                                        <!-- <a href="{{url('admin/edit-category/'.$item->id)}}" class="btn btn-success btn-sm btn-icon-text mr-3">Edit </a> -->
+                                    @auth
+    @can('edit_category')
+                            <a href="{{url('admin/edit-category/'.$item->id)}}" class="btn btn-success btn-sm btn-icon-text ">Edit </a> @endcan
+@endauth   
+                                    </td>
     <td>
 
 
-<a href="{{url('admin/delete-category/'.$item->id)}}" class="btn btn-danger btn-sm btn-icon-text ">Delete </a>
+<!-- <a href="{{url('admin/delete-category/'.$item->id)}}" class="btn btn-danger btn-sm btn-icon-text ">Delete </a> -->
+ @can('delete_category')
+    <a href="{{url('admin/delete-category/'.$item->id)}}" class="btn btn-danger">Delete</a>
+@endcan
 
 {{-- <button type="button" class="btn btn-danger btn-sm btn-icon-text  deleteCategoryBtn" value="{{$item->id}}">Delete</button> --}}
 
